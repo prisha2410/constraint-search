@@ -1,0 +1,21 @@
+query,product,color_field,label,rank,verdict,reason
+black fluffy stool,jurgen stool,beige,Partial,4,real,beige stool for a black request
+fleur de lis living candle wall sconce bronze,tall metal wall sconce,black,Partial,2,real,black sconce for a bronze request
+burnt orange curtains,antique floral room darkening rod pocket curtain panels,pink,unjudged,6,real,pink curtains for burnt orange
+"bedroom wall decor floral, multicolored with some teal (prints)",flowers in unity teal by david bromstad - picture frame painting print,blue/green,Exact,5,checker,query asks for multicolor with some teal; blue/green teal print fits
+dark gray dresser,gerth 8 drawer double dresser,wirebrushed white,unjudged,9,real,white dresser for dark gray
+black 5 drawer dresser by guilford,richawara 9 drawer standard dresser,brown,Partial,3,real,brown dresser for black
+hussain handmade tufted magenta rug,merlyn geometric tufted wool brown/tan area rug,brown and tan,Partial,9,real,brown/tan rug for magenta
+white abstract,bohemian abstract bright i painting print on wrapped canvas,grenadier ; orange ; corn ; light yellow ; earls green,unjudged,9,real,"orange/yellow/green print, no white"
+light wood nightstand with silver accents,pacey 2 - drawer solid wood nightstand in light gray,light gray,Partial,4,checker,silver is only for the accents; checker treats it as the product color
+decorative white pillow,blue morpho throw pillow,blue/green,Partial,9,real,blue/green pillow for white
+gold,fino-ivory/rose gold,gilver,Exact,7,metadata,"field 'gilver' is a typo; product is ivory/rose gold, close to the gold request"
+gray dresser,richawara 9 drawer standard dresser,brown,Partial,1,real,brown dresser for gray
+black 5 drawer dresser by guilford,wood 4 drawer standard dresser,gray oak,Partial,4,real,gray oak dresser for black
+decorative white pillow,design throw pillow,green,unjudged,7,real,green pillow for white
+white abstract,abstract wall décor,gold,unjudged,5,real,gold decor for white
+7 draw white dresser,richawara 9 drawer standard dresser,brown,unjudged,2,real,brown dresser for white
+light wood nightstand with silver accents,white modern high gloss led lights nightstand bedside end table with 2,white,Partial,1,checker,silver is only for the accents; checker treats it as the product color
+light wood nightstand with silver accents,"modern high gloss nightstand white night stand with led light , double",white,unjudged,2,checker,silver is only for the accents; checker treats it as the product color
+navy and peach bedding,chaplecroft ocean comforter set,green/coral,unjudged,9,shade,"coral is close to peach, but navy is missing"
+beach blue headboard,summer retreat chippendale panel headboard,antique cottage white,Exact,3,real,white headboard for beach blue
