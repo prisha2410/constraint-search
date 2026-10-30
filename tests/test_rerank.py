@@ -1,6 +1,6 @@
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / "src"))
-from rerank import field_violates, field_matches, demote, hard_filter
+from rerank import field_violates, field_or_text_violates, field_matches, demote, hard_filter
 
 BLUE = frozenset({"blue"})
 
@@ -18,6 +18,13 @@ def test_field_violates_v2_trusts_a_name_that_states_the_color():
     assert field_violates(BLUE, "Brown", name="blue throw pillow") is False
     assert field_violates(BLUE, "Brown", name="throw pillow") is True
     assert field_violates(BLUE, "Brown") is True            # v1 behaviour when no name is given
+
+
+def test_v3_reads_the_description_only_when_the_field_is_empty():
+    assert field_or_text_violates(BLUE, "", "finished in a white glossy coat") is True
+    assert field_or_text_violates(BLUE, "", "a navy velvet cover") is False      # lenient: navy is blue
+    assert field_or_text_violates(BLUE, "", "made of solid pine") is False       # no color stated
+    assert field_or_text_violates(BLUE, "Blue", "finished in white") is False    # the field wins
 
 
 def test_field_matches():

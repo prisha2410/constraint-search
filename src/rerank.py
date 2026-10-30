@@ -21,6 +21,16 @@ def field_violates(qcols, field, lenient=True, name=""):
     return not (qcols & parse_colors(name, lenient, False)[0])
 
 
+def field_or_text_violates(qcols, field, description, lenient=True):
+    """v3: the color field decides when it has a value; otherwise the start of the description does.
+
+    Never reads the product name, so a name-based grader stays independent of this signal.
+    """
+    if field:
+        return field_violates(qcols, field, lenient)
+    return field_violates(qcols, description[:300], lenient)
+
+
 def field_matches(qcols, field, lenient=True):
     """True when the product's color field names one of the query's colors."""
     pcols, _ = parse_colors(field, lenient, False)
