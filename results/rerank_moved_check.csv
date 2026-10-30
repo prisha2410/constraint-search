@@ -1,0 +1,21 @@
+query,product,color_field,label,my_verdict,ai_verdict,ai_reason
+light wood nightstand with silver accents,pacey 2 - drawer solid wood nightstand in light gray,light gray,Partial,,checker,silver is only for the accents; the product is light wood/gray as asked
+tollette teal outdoor rug,tollette geometric blue area rug,blue,Partial,,shade,"the named tollette rug in blue; teal asked, blue is close"
+dark gray dresser,richawara 9 drawer standard dresser,brown,unjudged,,real,brown dresser for dark gray
+"bedroom wall decor floral, multicolored with some teal (prints)",see the light - picture frame painting print,gunmetal gray,unjudged,,real,gunmetal gray print; not multicolored and no teal
+black 5 drawer dresser by guilford,guilford 3 drawer dresser,white,Partial,,real,white dresser for black
+door pulls bronze matte 4 inch,lincolnwood welcome my pretties 22 '' x 10 '' non-slip outdoor door ma,purple/orange/green,unjudged,,real,multicolor door mat for bronze door pulls
+brushed gold wall decor,black gold wall décor,black,Partial,,metadata,name says black gold; field lists only black
+gold,band of gold rooster - print,green,Exact,,checker,"one-word query 'gold'; 'band of gold' is a name, labeled Exact"
+blue faux throw with pillows,fir throw pillow,green,Partial,,real,green pillow for blue
+black 5 drawer dresser by guilford,barkett 9 drawer dresser,gray,Partial,,real,gray dresser for black
+decorative white pillow,decorative pescado square pillow,blue,Partial,,real,blue pillow for white
+hussain handmade tufted magenta rug,hussain abstract ivory/blue area rug,ivory/blue,Partial,,real,ivory/blue rug for magenta
+fleur de lis living candle wall sconce bronze,lily iron and glass wall sconce,orange/white,Partial,,metadata,"field may describe the glass, not the metal finish"
+decorative white pillow,castellanos decorative cotton lumbar pillow,beige,Partial,,shade,beige is close to white for a pillow
+decorative white pillow,bridesdale decorative cotton lumbar pillow,beige/yellow/green,Partial,,real,beige/yellow/green pillow for white
+light and navy blue decorative pillow,blue throw pillow,brown,Partial,,metadata,name says blue throw pillow; field says brown
+black hanging bookshelf,bookshelf,chrome/brown,Partial,,real,chrome/brown bookshelf for black
+gray dresser,richawara 9 drawer standard dresser,brown,Partial,,real,brown dresser for gray
+"bedroom wall decor floral, multicolored with some teal (prints)",modern floral inspired round pine wall decor,beige/white,Partial,,real,beige/white decor; not multicolored and no teal
+aiden black velvet bed,london king upholstered platform bed,taupe,unjudged,,real,taupe bed for black velvet
