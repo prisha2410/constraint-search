@@ -14,6 +14,12 @@ def test_field_violates_only_on_a_named_wrong_color():
     assert field_violates(frozenset(), "Black") is False    # query asks for no color
 
 
+def test_field_violates_v2_trusts_a_name_that_states_the_color():
+    assert field_violates(BLUE, "Brown", name="blue throw pillow") is False
+    assert field_violates(BLUE, "Brown", name="throw pillow") is True
+    assert field_violates(BLUE, "Brown") is True            # v1 behaviour when no name is given
+
+
 def test_field_matches():
     assert field_matches(BLUE, "Dark Blue") is True
     assert field_matches(BLUE, "") is False

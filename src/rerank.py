@@ -7,12 +7,18 @@ and never penalizes a product whose color is missing or multicolor.
 from color_checker import parse_colors
 
 
-def field_violates(qcols, field, lenient=True):
-    """True only when the product's color field names a color and none of them is in the query."""
+def field_violates(qcols, field, lenient=True, name=""):
+    """True only when the product's color field names a color and none of them is in the query.
+
+    v2: pass the product name to spare products whose name states a query color,
+    for fields that contradict their own name ("blue throw pillow" with field "brown").
+    """
     if not qcols:
         return False
     pcols, multi = parse_colors(field, lenient, False)
-    return bool(pcols) and not multi and not (qcols & pcols)
+    if not pcols or multi or (qcols & pcols):
+        return False
+    return not (qcols & parse_colors(name, lenient, False)[0])
 
 
 def field_matches(qcols, field, lenient=True):
