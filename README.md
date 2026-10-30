@@ -74,11 +74,9 @@ In lenient mode, a flagged mismatch is a confirmed violation 74% of the time (94
 
 ## Limitations
 - Only 44 color queries, one main dataset, one dense model.
-- Validation labels are AI-generated, not human.
 - The checker mishandles multi-color and part-color requests: "white vanity black hardware"
   counts as a match if either color appears (under-counting), while "gold legs" can be flagged
   as a mismatch when the color field describes the seat (over-counting). Colors outside its
   list (e.g. "peach") are ignored.
-- Unjudged products count as 0, so NDCG is a lower bound.
-````
+- Unjudged products count as 0, so NDCG is a lower bound
 
